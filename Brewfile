@@ -3,6 +3,7 @@
 # Formulae
 brew "gh"
 brew "mise"
+brew "starship"
 
 # Casks
 cask "visual-studio-code"

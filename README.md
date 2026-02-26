@@ -42,6 +42,7 @@ config/
   karabiner/    keyboard remapping (Hyper key)
   mise/         language runtime versions
   gh/           GitHub CLI config
+  starship/     prompt theme config
 claude/         Claude Code global config
 Brewfile        Homebrew packages
 install.sh      Symlink everything into place

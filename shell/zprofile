@@ -1,2 +1,4 @@
-
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+
+# Starship config location
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"

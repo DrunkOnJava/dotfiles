@@ -55,6 +55,7 @@ link "$DOTFILES/ssh/config"       "$HOME/.ssh/config"
 link "$DOTFILES/config/karabiner/karabiner.json"  "$HOME/.config/karabiner/karabiner.json"
 link "$DOTFILES/config/mise/config.toml"           "$HOME/.config/mise/config.toml"
 link "$DOTFILES/config/gh/config.yml"              "$HOME/.config/gh/config.yml"
+link "$DOTFILES/config/starship/starship.toml"     "$HOME/.config/starship/starship.toml"
 
 # Claude Code
 link "$DOTFILES/claude/CLAUDE.md"      "$HOME/.claude/CLAUDE.md"

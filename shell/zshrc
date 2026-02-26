@@ -1,2 +1,39 @@
-export PATH="$HOME/.local/bin:$PATH"
+# =====================
+# PATH
+# =====================
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
+# =====================
+# Tools
+# =====================
 eval "$(/opt/homebrew/bin/mise activate zsh)"
+eval "$(starship init zsh)"
+
+# =====================
+# Aliases
+# =====================
+alias ll='ls -la'
+alias update='brew update && brew upgrade'
+alias dotfiles='cd ~/.dotfiles'
+
+# =====================
+# Python helpers
+# =====================
+pyvenv() {
+  case "$1" in
+    create)    python3 -m venv .venv && echo "Virtual environment created in .venv/" ;;
+    activate)  source .venv/bin/activate ;;
+    deactivate) deactivate ;;
+    *)         echo "Usage: pyvenv [create|activate|deactivate]" ;;
+  esac
+}
+
+# =====================
+# History
+# =====================
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
