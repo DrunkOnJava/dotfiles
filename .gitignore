@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+
+# Secrets — never commit these
+**/*.pem
+**/*.key
+**/credentials*
+**/*secret*
+**/*token*
+
+# SSH private keys (config is fine, keys are not)
+ssh/id_*
+!ssh/config
+
+# gh auth tokens are in the system keyring, but just in case
+gh/hosts.yml

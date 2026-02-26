@@ -1,0 +1,9 @@
+[user]
+	name = Griffin Long
+	email = griffinradcliffe@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[core]
+	editor = code --wait
