@@ -46,7 +46,8 @@ link "$DOTFILES/shell/zshenv"     "$HOME/.zshenv"
 link "$DOTFILES/shell/profile"    "$HOME/.profile"
 
 # Git
-link "$DOTFILES/git/gitconfig"    "$HOME/.gitconfig"
+link "$DOTFILES/git/gitconfig"         "$HOME/.gitconfig"
+link "$DOTFILES/git/gitignore_global"  "$HOME/.gitignore_global"
 
 # SSH (config only — never symlink keys)
 link "$DOTFILES/ssh/config"       "$HOME/.ssh/config"

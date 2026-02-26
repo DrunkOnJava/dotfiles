@@ -58,5 +58,10 @@
       "Bash(rm -r *)"
     ]
   },
-  "autoMemoryEnabled": true
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/griffin/.claude/statusline-command.sh"
+  },
+  "autoMemoryEnabled": true,
+  "skipDangerousModePermissionPrompt": true
 }
