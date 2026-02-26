@@ -1,4 +1,67 @@
+# =====================
+# Local Network
+# =====================
+
+# Old MacBook Pro
+Host quidproquo quidproquo.local
+  HostName quidproquo.local
+  User griffin
+  IdentityFile ~/.ssh/id_ed25519
+
+# =====================
+# Tailscale Network
+# =====================
+
+# Windows PC — for x86 Docker containers
+Host windows-pc desktop-bog73qk
+  HostName 100.100.175.89
+  User Griffin
+  IdentityFile ~/.ssh/id_ed25519
+
+# Mac Media Server
+Host ln2tl media-server
+  HostName 100.125.1.15
+  User griffinlong
+
+# iMac M1 — GitHub Actions CI runner
+Host imac-m1 griffins-imac
+  HostName 100.106.87.23
+  User ci
+
+# Raspberry Pi
+Host raspberry-pi pi
+  HostName 100.116.38.90
+  User griffin
+  IdentityFile ~/.ssh/id_ed25519
+
+# =====================
+# Seedbox (rapidseedbox.com)
+# =====================
+# TODO: update hostname and credentials for new rapidseedbox provider
+# Host seedbox
+#   HostName <new-hostname>.rapidseedbox.com
+#   User <username>
+#   Port 22
+#   IdentityFile ~/.ssh/seedbox_key
+#   Compression yes
+
+# =====================
+# Code Forges
+# =====================
+
 Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+
+# =====================
+# Defaults
+# =====================
+
+Host *
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  ServerAliveInterval 60
+  ServerAliveCountMax 30
+  Compression yes
