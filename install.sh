@@ -58,6 +58,11 @@ link "$DOTFILES/config/mise/config.toml"           "$HOME/.config/mise/config.to
 link "$DOTFILES/config/gh/config.yml"              "$HOME/.config/gh/config.yml"
 link "$DOTFILES/config/starship/starship.toml"     "$HOME/.config/starship/starship.toml"
 
+# VS Code
+VSCODE_USER="$HOME/Library/Application Support/Code/User"
+link "$DOTFILES/config/vscode/settings.json"     "$VSCODE_USER/settings.json"
+link "$DOTFILES/config/vscode/keybindings.json"   "$VSCODE_USER/keybindings.json"
+
 # Claude Code
 link "$DOTFILES/claude/CLAUDE.md"      "$HOME/.claude/CLAUDE.md"
 link "$DOTFILES/claude/settings.json"  "$HOME/.claude/settings.json"

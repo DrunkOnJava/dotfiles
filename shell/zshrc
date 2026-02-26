@@ -16,6 +16,14 @@ alias ll='ls -la'
 alias update='brew update && brew upgrade'
 alias dotfiles='cd ~/.dotfiles'
 
+# Directory shortcuts
+alias dev='cd ~/Developer'
+alias apps='cd ~/Developer/apps'
+alias libs='cd ~/Developer/libs'
+alias tools='cd ~/Developer/tools'
+alias exp='cd ~/Developer/experiments'
+alias forks='cd ~/Developer/forks'
+
 # =====================
 # Python helpers
 # =====================
